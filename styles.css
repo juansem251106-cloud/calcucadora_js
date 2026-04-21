@@ -1,7 +1,5 @@
 body {
-    background-image: url(https://usagif.com/wp-content/uploads/gif/outerspace-55.gif);
-    background-size: cover;
-    width: 100%;
+    background-color: black;
 }
 
 .calculator {
@@ -42,3 +40,28 @@ button {
 
 button:hover { background: #ffb758; }
 .col-2 { grid-column: span 2; }
+
+.screen-container {
+    display: flex;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.screen-container span {
+    flex: 1; 
+    text-align: center;
+    border-right: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-container span:last-child {
+    border-right: none;
+    color: #1874ff; 
+    font-weight: bold;
+}
+
